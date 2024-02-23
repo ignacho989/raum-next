@@ -1,19 +1,50 @@
+:root {
+  font-size: 16px;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-.main-layout {
-  background-image: url("../public/chapa_perforada.png");
-  background-size: 2.1rem;
+img {
+  display: block;
+  max-width: 100%;
 }
 
-.main-body {
-  width: 100%;
+.main-layout {
+  background: url("../public/chapa_perforada.png"), rgba(255, 255, 255, 0.342);
+  background-blend-mode: color;
+  background-size: 2.1rem;
+  width: auto;
+}
+/* */
+/* width: 100%;
   height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start; */
+/* position: relative; 
+
+/* .container {
+  display: flex;
+
+} */
+
+.main-body {
   /* background-image: url("../public/chapa_perforada.png");
-  background-size: 6rem; */
+  background-size: 2.1rem; */
+  max-width: 960px;
+  margin-inline: auto;
+  height: 100vh;
+  /* position: absolute;
+  left: 50%;
+  transform: translateX(-50%); */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .div-idioma {
@@ -22,6 +53,7 @@
   flex-direction: row;
   align-items: center;
   justify-content: end;
+  z-index: 9999;
 }
 
 .navbar {
@@ -30,40 +62,225 @@
 }
 
 .boton-idioma {
+  position: absolute;
+  right: 10%;
+  top: 2%;
+  width: auto;
+  font-size: 0.8rem;
+  margin-bottom: 1rem;
+  padding: 0.2rem;
+  background-color: white;
+  border: none;
+}
+
+.portada-titulo {
+  /* margin-left: 15rem; */
+  /* position: absolute; */
+  /* left: 20%; */
+  width: 80%;
+  display: flex;
+  flex-direction: row;
   align-items: end;
-  text-align: end;
 }
 
 .div-portada {
-  width: 100%;
-  height: 100vh;
+  width: auto;
+  height: auto;
+  /* overflow: hidden; */
 }
 
-.bg-img {
-  margin-left: 0.4rem;
-  width: 15rem;
-  height: 15rem;
+.back-img {
+  /* margin-left: 15rem; */
+  width: 27.5rem;
+  height: 25rem;
+}
+
+.contenedor-titulo {
+  width: auto;
+  height: 5rem;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  align-items: end;
+  flex-wrap: nowrap;
+}
+
+.logo-raum {
+  width: 4.5rem;
+  height: auto;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.logo-contactos {
+  position: absolute;
+  left: 25%;
+  top: 55%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+
+.div-botones {
+  position: absolute;
+  right: 20%;
+  top: 65%;
+  display: flex;
+  flex-direction: column;
+}
+
+.boton {
+  font-size: 1rem;
+  font-weight: 500;
+  margin: 0.5rem;
+}
+
+.btn-galeria {
+  background-color: black;
+  color: white;
+  border: 2px solid black;
+  text-decoration: none;
+  padding: 0.5rem 0.5rem 0.5rem 6rem;
+}
+
+.btn-nosotras {
+  color: black;
+  border: 2px solid black;
+  text-decoration: none;
+  padding: 0.5rem 5rem 0.5rem 0.5rem;
+}
+
+.btn-contacto {
+  color: black;
+  border: 2px solid black;
+  text-decoration: none;
+  padding: 0.5rem 5rem 0.5rem 0.5rem;
+}
+
+.btn-galeria:hover {
+  background-color: rgba(255, 255, 255, 0);
+  color: black;
 }
 
 .titulo {
-  margin-left: 0.3rem;
-  font-size: 23px;
-  font-weight: 300;
+  /* margin-left: 0.3rem; */
+  font-size: 1.8rem;
+  font-weight: 400;
+  letter-spacing: 0.08rem;
+  /* text-align: center; */
+  /* text-shadow: -4px -4px 0px rgba(0, 0, 0, 0.74); */
 }
 
-.footer {
+/* .footer {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-}
+} */
 
 a {
   text-decoration: none;
 }
 
 i {
-  color: black;
+  color: white;
+  font-size: 1.5rem;
+  background-color: black;
+  /* margin: 0.25rem; */
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  text-align: center;
+  border-radius: 5px;
 }
 
-@media screen and (min-width: 900px) {
+@media screen and (max-width: 940px) {
+  .portada-titulo {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* width: 100%; */
+  }
+
+  .titulo {
+    font-size: 1.8rem;
+  }
+
+  .div-botones {
+    right: 10%;
+    top: 70%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  /* .main-layout {
+    justify-content: center;
+    align-content: center;
+  } */
+
+  /* .main-body {
+    width: 100%;
+    height: 100vh;
+  } */
+  .portada-titulo {
+    width: auto;
+  }
+
+  .div-botones {
+    right: 0%;
+    top: 70%;
+  }
+
+  .logo-contactos {
+    left: 5%;
+    top: 60%;
+  }
+
+  .bg-img {
+    margin-left: 0.4rem;
+    width: 15rem;
+    height: 15rem;
+  }
+
+  .contenedor-titulo {
+    align-items: center;
+  }
+
+  .btn-galeria {
+    padding: 0.4rem 0.4rem 0.4rem 5rem;
+  }
+  .btn-nosotras {
+    padding: 0.4rem 4rem 0.4rem 0.4rem;
+  }
+  .btn-contacto {
+    padding: 0.4rem 4rem 0.4rem 0.4rem;
+  }
+  /* .div-portada {
+    margin-top: 1rem;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+  }
+  
+
+  .container-titulo {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+  }
+
+  .titulo {
+    margin-left: 0.3rem;
+    font-size: 23px;
+    font-weight: 300;
+  } */
+}
+
+@media screen and (max-width: 360px) {
+  .titulo {
+    font-size: 1.5rem;
+  }
 }

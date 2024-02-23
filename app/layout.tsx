@@ -1,8 +1,14 @@
-import "bootstrap/dist/css/bootstrap.css";
+// import "bootstrap/dist/css/bootstrap.css";
+// next/dist/compiled/@next/font/dist/local
 import "bootstrap-icons/font/bootstrap-icons.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import localFont from "next/font/local";
+import Navbar from "./components/navbar/navbar";
+import { useState } from "react";
+
+const stolzl = localFont({ src: "../public/fonts/Stolzl Book.ttf" });
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,25 +24,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.className}`}>
-        <main className="main-layout">
-          <button className="">ES/EN</button>
-          {children}
-          <footer className="footer">
-            <a href="">
-              <i className="bi bi-whatsapp"></i>
-            </a>
-            <a href="https://www.instagram.com/raum.arq?igshid=MzMyNGUyNmU2YQ%3D%3D">
-              <i className="bi bi-instagram"></i>
-            </a>
-            <a href="mailto:hola@raum-arq.com">
-              <i className="bi bi-envelope"></i>
-            </a>
-            <a href="https://www.linkedin.com/company/raum-arquitectura/about/">
-              <i className="bi bi-linkedin"></i>
-            </a>
-          </footer>
-        </main>
+      <body className={`${stolzl.className} main-layout`}>
+        <header>
+          <button className="boton-idioma">ES / EN</button>
+        </header>
+        {children}
       </body>
     </html>
   );
