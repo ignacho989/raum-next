@@ -15,8 +15,16 @@ const stolzl = localFont({
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "RAUM Arq",
-  description: "Principal",
+  title: "RAUM",
+  description: "arquitectura",
+  openGraph: {
+    title: "RAUM",
+    description: "arquitectura",
+    url: "https://raum-arq.com",
+    siteName: "Raum Arq",
+    images: "public/LOGO PRINCIPAL.png",
+    locale: "es-ES",
+  },
 };
 
 export default function RootLayout({

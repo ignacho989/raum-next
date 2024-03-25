@@ -158,7 +158,7 @@ const proyectos = [
   },
   {
     id: "6",
-    name: "Mobiliario 1",
+    name: "Mueble Argentino 1",
     text: `-AÑO DE PROYECTO: 2022
     \n-AÑO DE CONSTRUCCION: 2022
     \n-UBICACIÓN: BARRIO RINCON DE EMILIO, NEUQUÉN, ARG.
@@ -182,7 +182,7 @@ const proyectos = [
   },
   {
     id: "7",
-    name: "Mobiliario 2",
+    name: "Mueble Argentino 2",
     text: `-AÑO DE PROYECTO: 2022
      \n-AÑO DE CONSTRUCCION: 2022
      \n-UBICACIÓN: BARRIO RINCON DE EMILIO, NEUQUÉN, ARG.
