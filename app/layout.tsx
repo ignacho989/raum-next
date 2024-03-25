@@ -8,7 +8,9 @@ import localFont from "next/font/local";
 import Navbar from "./components/navbar/navbar";
 import { useState } from "react";
 
-const stolzl = localFont({ src: "../public/fonts/Stolzl Book.ttf" });
+const stolzl = localFont({
+  src: "../public/fonts/Stolzl Book.ttf",
+});
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -26,7 +28,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${stolzl.className} main-layout`}>
         <header>
-          <button className="boton-idioma">ES / EN</button>
+          {/* <button className="boton-idioma">ES / EN</button> */}
         </header>
         {children}
       </body>

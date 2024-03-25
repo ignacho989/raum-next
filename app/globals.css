@@ -1,5 +1,7 @@
 :root {
   font-size: 16px;
+
+  --swiper-navigation-color: #000000;
 }
 
 * {
@@ -95,6 +97,12 @@ img {
   height: 25rem;
 }
 
+.iconos-img {
+  width: 2rem;
+  height: auto;
+  margin: 0.1rem;
+}
+
 .contenedor-titulo {
   width: auto;
   height: 5rem;
@@ -110,7 +118,7 @@ img {
   width: 4.5rem;
   height: auto;
   margin-top: 2rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
 .logo-contactos {
@@ -229,12 +237,12 @@ i {
 
   .div-botones {
     right: 0%;
-    top: 70%;
+    top: 75%;
   }
 
   .logo-contactos {
     left: 5%;
-    top: 60%;
+    top: 68%;
   }
 
   .bg-img {
@@ -282,5 +290,9 @@ i {
 @media screen and (max-width: 360px) {
   .titulo {
     font-size: 1.5rem;
+  }
+
+  .logo-raum {
+    max-width: 3rem;
   }
 }

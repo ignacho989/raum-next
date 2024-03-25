@@ -20,14 +20,13 @@ export default function Navbar() {
   return (
     <div className={styles.div}>
       <div className={styles.head}>
-        <Image src={banner} alt="banner" className={styles.banner} />
+        <button onClick={handleNav} className={styles.button}>
+          <Image alt="menu button" src={menuImage} />
+        </button>
         <h1 className={`${tourney.className} ${styles.title}`}>
           RAUM ARQUITECTURA
         </h1>
       </div>
-      <button onClick={handleNav} className={styles.button}>
-        <Image alt="menu button" src={menuImage} />
-      </button>
       <nav className={styles.nav}>
         {showNav === true ? (
           <ul className={styles.ul}>
@@ -48,7 +47,7 @@ export default function Navbar() {
               </Link>{" "}
             </li>
             <li>
-              <Link href="/about" className={styles.li}>
+              <Link href="/nosotras" className={styles.li}>
                 &gt; SOBRE NOSOTRAS
               </Link>
             </li>
