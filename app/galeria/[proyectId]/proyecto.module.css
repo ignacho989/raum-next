@@ -60,8 +60,8 @@
 .image {
   display: block;
   object-fit: contain;
-  width: 100%;
-  height: auto;
+  width: auto;
+  height: 85vh;
   aspect-ratio: 1/1;
 }
 

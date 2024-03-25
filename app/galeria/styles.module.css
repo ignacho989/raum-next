@@ -59,6 +59,7 @@
   /* transition: all 0.2s ease-in; */
   color: rgb(255, 255, 255);
   z-index: -1;
+  font-size: 1.8rem;
 }
 
 .container:hover .titulos {

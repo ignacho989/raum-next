@@ -158,7 +158,7 @@ const proyectos = [
   },
   {
     id: "6",
-    name: "Mueble Gabi 1",
+    name: "Mobiliario 1",
     text: `-AÑO DE PROYECTO: 2022
     \n-AÑO DE CONSTRUCCION: 2022
     \n-UBICACIÓN: BARRIO RINCON DE EMILIO, NEUQUÉN, ARG.
@@ -182,7 +182,7 @@ const proyectos = [
   },
   {
     id: "7",
-    name: "Muebles Gabi 2",
+    name: "Mobiliario 2",
     text: `-AÑO DE PROYECTO: 2022
      \n-AÑO DE CONSTRUCCION: 2022
      \n-UBICACIÓN: BARRIO RINCON DE EMILIO, NEUQUÉN, ARG.
@@ -310,10 +310,28 @@ const proyectos = [
       "/proyectos/12 CASA EL LUPULAR OK/P5.png",
     ],
   },
+  {
+    id: "12",
+    name: "14 Duplex",
+    text: `-AÑO DE PROYECTO: 2016
+  \n-AÑO DE CONSTRUCCION:  EN CONSTRUCCIÓN
+  \n-UBICACIÓN: BARRIO DOS RÍOS, NEUQUÉN, ARG.
+  \n-SUPERFICIE:
+  \n-TERRENO: 2005m2
+  \n-CUBIERTA: 1450m2
+  \n-SEMICUBIERTA:100m2
+  `,
+    minImg: "/proyectos/13 DUPLEX 2 RIOS OK/M.png",
+    images: [
+      "/proyectos/13 DUPLEX 2 RIOS OK/F1.PNG",
+      "/proyectos/13 DUPLEX 2 RIOS OK/F2.PNG",
+      "/proyectos/13 DUPLEX 2 RIOS OK/F3.PNG",
+      "/proyectos/13 DUPLEX 2 RIOS OK/F4.PNG",
+      "/proyectos/13 DUPLEX 2 RIOS OK/F5.PNG",
+      "/proyectos/13 DUPLEX 2 RIOS OK/F6.PNG",
+      "/proyectos/13 DUPLEX 2 RIOS OK/F7.PNG",
+    ],
+  },
 ];
-
-// export default proyecto;
-
-// console.log(proyecto[1].text.toLowerCase());
 
 export default proyectos;

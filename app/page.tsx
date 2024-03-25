@@ -9,8 +9,6 @@ import linkedin from "/public/iconos/linkedin-square-logo-60.png";
 import whatsapp from "/public/iconos/whatsapp-logo-60.png";
 import email from "/public/iconos/envelope-solid-60.png";
 
-// col-1 d-flex flex-column align-items-center
-
 const tourney = Tourney({ subsets: ["latin"] });
 
 export default function Home() {
@@ -60,17 +58,17 @@ export default function Home() {
             GALERIA
           </Link>
           <Link
-            href="/gallery"
+            href="/nosotras"
             className={`${tourney.className} boton btn-nosotras`}
           >
             NOSOTRAS
           </Link>
-          <Link
-            href="/gallery"
+          {/* <Link
+            href="/contacto"
             className={`${tourney.className} boton btn-contacto`}
           >
             CONTACTO
-          </Link>
+          </Link> */}
         </div>
       </main>
     </div>

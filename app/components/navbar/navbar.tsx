@@ -41,11 +41,11 @@ export default function Navbar() {
               </Link>
             </li>
 
-            <li>
+            {/* <li>
               <Link href="/contacto" className={styles.li}>
                 &gt; CONTACTANOS!¡
               </Link>{" "}
-            </li>
+            </li> */}
             <li>
               <Link href="/nosotras" className={styles.li}>
                 &gt; SOBRE NOSOTRAS
